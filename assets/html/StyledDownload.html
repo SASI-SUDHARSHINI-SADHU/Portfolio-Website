@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Website</title>
+</head>
+<body>
+  <button onclick="downloadWebsite()">Download</button>
+
+  <script>
+    function downloadWebsite() {
+      var htmlContent = document.documentElement.outerHTML;
+      var cssContent = '';
+
+      // Retrieve all linked stylesheets
+      var stylesheets = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
+
+      // Load CSS files asynchronously
+      var promises = stylesheets.map(function(stylesheet) {
+        return fetch(stylesheet.href)
+          .then(response => response.text())
+          .then(css => cssContent += css);
+      });
+
+      // Wait for all CSS files to be loaded
+      Promise.all(promises)
+        .then(function() {
+          var combinedContent = '<style>' + cssContent + '</style>' + htmlContent;
+          var fileName = "downloaded_website.html";
+
+          var element = document.createElement('a');
+          element.setAttribute('href', 'data:text/html;charset=utf-8,' + encodeURIComponent(combinedContent));
+          element.setAttribute('download', fileName);
+          element.style.display = 'none';
+          document.body.appendChild(element);
+          element.click();
+          document.body.removeChild(element);
+        });
+    }
+  </script>
+</body>
+</html>

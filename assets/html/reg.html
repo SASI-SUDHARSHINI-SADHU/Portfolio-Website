@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reg</title>
+        
+  <title>Registration Form</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-group textarea {
+      resize: vertical;
+    }
+    .form-group button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: rgb(249, 206, 213);
+  background-size: cover; /* Adjusts the size of the background image to cover the entire body */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  /* Additional CSS properties can be added as per your requirements */
+      }
+
+      label {
+          font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+          width: 300px;
+          padding: 5px;
+          margin-bottom: 10px;
+      }
+
+      textarea {
+          height: 100px;
+      }
+
+      button[type="submit"] {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+      }
+  </style>
+    </head>
+    <body> 
+      <div class="container">
+        <form id = 'registrationForm'>
+            <!--Home-->
+            <!--Image upload-->
+            <h1 align="center">Let's get started...</h1>
+            <div class="form-group">
+            <h1>Home Section</h1>
+            <label for="image-input1">Upload your image</label>
+            <input type="file" class="image-input1"><br><br>
+            <label for = 'nickname'>Name of the Faculty: </label>
+            <input type = 'text' id="nickname" name="nickname" placeholder="Enter how to address you(Nickname)" required><br><br>
+            <label for = 'username'>Name of the Faculty: </label>
+            <input type = 'text' id="username" name="username" placeholder="Enter your name" required><br><br>
+            <label for = 'info'>Designation of the Faculty: </label>
+            <input type = 'text' id="info" name="info" placeholder="Enter your designation in your field" required><br><br>
+            <label for="text">My qualities:</label>
+            <textarea id="text" name="text" placeholder="Write about your qualities"></textarea><br><br>
+            </div>
+
+            <!--About-->
+            <h1>About Section</h1>
+            <div class="form-group">
+            <label for="bio">About Me/Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Write a brief introduction and background information about yourself"></textarea><br><br>
+            <label for = 'age'>Age: </label>
+            <input type = 'text' id="age" name="age" placeholder="Enter your age" required><br><br>
+            <label for = 'gender'>Gender: </label>
+            <input type = 'text' id="gender" name="gender" placeholder="Enter your gender" required><br><br>
+            <label for = 'languages'>Languages: </label>
+            <input type = 'text' id="languages" name="languages" placeholder="Enter the known languages" required><br><br>
+            <label for = 'work'>Work: </label>
+            <input type = 'text' id="work" name="work" placeholder="Enter your present role of yours" required><br><br>
+            <h3>Enter any three top skills of yours and give its rate</h3>
+            <label for = 'skill1'>Skill: </label>
+            <input type = 'text' id="skill1" name="skill1" placeholder="Enter your skill" required><br><br>
+            <label for = 'p1'>Knowledge: </label>
+            <input type = 'text' id="p1" name="p1" placeholder="Enter your level in the skill in terms of percentage" required><br><br>
+            <label for = 'skill2'>Skill: </label>
+            <input type = 'text' id="skill2" name="skill2" placeholder="Enter your skill" required><br><br>
+            <label for = 'p2'>Knowledge: </label>
+            <input type = 'text' id="p2" name="p2" placeholder="Enter your level in the skill in terms of percentage" required><br><br>
+            <label for = 'skill3'>Skill: </label>
+            <input type = 'text' id="skill3" name="skill3" placeholder="Enter your skill" required><br><br>
+            <label for = 'p3'>Knowledge: </label>
+            <input type = 'text' id="p3" name="p3" placeholder="Enter your level in the skill in terms of percentage" required><br><br>
+            <label for = 'experience'>Experience: </label>
+            <input type = 'text' id="experience" name="experience" placeholder="Enter your experience in terms of years" required><br><br>
+            <label for = 'projects'>Project: </label>
+            <input type = 'text' id="projects" name="projects" placeholder="Enter number of projects done by you" required><br><br>
+            <label for = 'awards'>Awards: </label>
+            <input type = 'text' id="awards" name="awards" placeholder="Enter number of awards you got" required><br><br>
+            </div>
+            
+            <!--Research-->
+            <h1>Research Section</h1>
+            <h3>Give top 2 researches of yours</h3>
+            <div class="form-group">
+            <label for = 'title1'>Title of the Research1: </label>
+            <input type = 'text' id="title1" name="title1" placeholder="Enter the title of your research" required><br><br>
+            <label for="desc1">Brief description of the research1:</label>
+            <textarea id="desc1" name="desc1" placeholder="Write a brief introduction and information about the research"></textarea><br><br>
+            <label for="link1">Links for reference of research1:</label>
+            <textarea id="link1" name="link1" placeholder="Give any reference links of your research"></textarea><br><br>
+            
+            <label for = 'title2'>Title of the Research2: </label>
+            <input type = 'text' id="title2" name="title2" placeholder="Enter the title of your research" required><br><br>
+            <label for="desc2">Brief description of the Research2:</label>
+            <textarea id="desc2" name="desc2" placeholder="Write a brief introduction and information about the research"></textarea><br><br>
+            <label for="link2">Links for reference of research2:</label>
+            <textarea id="link2" name="link2" placeholder="Give any reference links of your research"></textarea><br><br>
+            </div>
+
+            <!--Teaching-->
+            
+            <h1>Teaching Section</h1>
+            <div class="form-group">
+            <h3>Enter past three subjects you have taught with respect to the timeline</h3>
+            <label for = 'subject1'>Subject1: </label>
+            <input type = 'text' id="subject1" name="subject1" placeholder="Enter the subject" required><br><br>
+            <label for="year1">Enter the time line of the subject1 taught:</label>
+            <input type = 'text' id="year1" name="year1" placeholder="Time span of the subject taught" required><br><br> 
+            <label for = 'subject2'>Subject2: </label>
+            <input type = 'text' id="subject2" name="subject2" placeholder="Enter the subject" required><br><br>
+            <label for="year2">Enter the time line of the subject2 taught:</label>
+            <input type = 'text' id="year2" name="year2" placeholder="Time span of the subject taught" required><br><br>
+            <label for = 'subject3'>Subject3: </label>
+            <input type = 'text' id="subject3" name="subject3" placeholder="Enter the subject" required><br><br>
+            <label for="year3">Enter the time line of the subject3 taught:</label>
+            <input type = 'text' id="year3" name="year3" placeholder="Time span of the subject taught" required><br><br>
+            <label for="allSub">Enter all the subjects you taught with respect to the timeline:</label>
+            <textarea id="allSub" name="allSub" placeholder="Enter all the subjects you have taught"></textarea><br><br>
+            </div>
+
+            <!--Project-->
+            <h1>Projects Section</h1>
+            <div class="form-group">
+            <label for = 'project1'>Title of the Project1: </label>
+            <input type = 'text' id="project1" name="project1" placeholder="Enter the title of your project" required><br><br>
+            <label for="des1">Brief description of the project1:</label>
+            <textarea id="des1" name="des1" placeholder="Write a brief introduction and information about the project"></textarea><br><br>
+            <label for="plink1">Links for project1:</label>
+            <textarea id="plink1" name="plink1" placeholder="Give any reference links of your project/repository"></textarea><br><br>
+            
+            <label for = 'project2'>Title of the Project2: </label>
+            <input type = 'text' id="project2" name="project2" placeholder="Enter the title of your project" required><br><br>
+            <label for="des2">Brief description of the project2:</label>
+            <textarea id="des2" name="des2" placeholder="Write a brief introduction and information about the project"></textarea><br><br>
+            <label for="plink2">About Project2:</label>
+            <textarea id="plink2" name="plink2" placeholder="Give any reference links of your project/repository"></textarea><br><br>
+            </div>
+
+            <!--Publications-->
+            <h1>Publications Section</h1>
+            <div class="form-group">
+            <label for = 'book1'>Title of the Book1/Publication1: </label>
+            <input type = 'text' id="book1" name="book1" placeholder="Title of the book" >
+            <label for = 'pub1'> Published year of book1/Publication1: </label>
+            <input type = 'text' id="pub1" name="pub1" placeholder="Enter the year Published">
+            <label for = 'detail1'>More details about the publication: </label>
+            <textarea id="detail1" name="detail1" placeholder="Enter description of book"></textarea>
+            
+            <label for = 'book2'>Title of the Book2/Publication2: </label>
+            <input type = 'text' id="book2" name="book2" placeholder="Title of the book" >
+            <label for = 'pub2'> Published year of book2/Publication2: </label>
+            <input type = 'text' id="pub2" name="pub2" placeholder="Enter the year Published">
+            <label for = 'detail2'>More details about the publication: </label>
+            <textarea id="detail2" name="detail2" placeholder="Enter description of book"></textarea>
+            
+            <label for = 'book3'>Title of the Book: </label>
+            <input type = 'text' id="book3" name="book3" placeholder="Title of the book">
+            <label for = 'pub3'> Published year: </label>
+            <input type = 'text' id="pub3" name="pub3" placeholder="Enter the year Published">
+            <label for = 'detail3'>More details about project: </label>
+            <textarea id="detail3" name="detail3" placeholder="Enter description of book"></textarea>
+
+
+            <label for="allPub">Mention any other publications:</label>
+            <textarea id="allPub" name="allSub" placeholder="Give the info of further more publications you have"></textarea><br><br>
+            </div>
+
+            <!--Awards and Recognitions-->
+            <h1>Awards/Recognition</h1>
+            <div class="form-group">
+            <label for = 'award1'>Name of the award1: </label>
+            <input type = 'text' id="award1" name="award1" placeholder="Enter the name of the award" required>
+            <label for="info1">Brief description of the award1:</label>
+            <textarea id="info1" name="info1" placeholder="Give the info of further the award1"></textarea><br><br>
+            <label for = 'award2'>Name of the award: </label>
+            <input type = 'text' id="award2" name="award2" placeholder="Enter the name of the award2" required>
+            <label for="info2">Brief description of the award2:</label>
+            <textarea id="info2" name="info2" placeholder="Give the info of further the award2"></textarea><br><br>
+           <label for = 'award3'>Name of the award: </label>
+            <input type = 'text' id="award3" name="award3" placeholder="Enter the name of the award3" required>
+            <label for="info3">Brief description of the award1:</label>
+            <textarea id="info3" name="info3" placeholder="Give the info of further the award3"></textarea><br><br>
+           <label for="more">Mention any other awards:</label>
+            <textarea id="more" name="more" placeholder="Give the brief description on any other awards you gained"></textarea><br><br>
+            </div>
+
+            <!--Contact information-->
+          <h1>Contact information</h1>
+          <div class="form-group">
+            <label for = 'contact'>Email : </label>
+            <input type = 'text' id="contact" name="contact" placeholder="Enter the contact details like email id(user choice)" >   
+          </div>
+      
+            <button type="submit">Register</button>
+        </form>
+        
+      </div>
+        <script>
+            var registrationForm = document.getElementById("registrationForm");
+      
+            window.onload = function() {
+  var imageInput1 = document.getElementsByClassName('image-input1');
+ 
+  var handleImageSubmit = function(event) {
+    var imageInput1 = event.target.previousElementSibling;
+    if (imageInput1.files && imageInput1.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function(event) {
+        var imageData1 = event.target.result;
+        localStorage.setItem('portfolioImage1', imageData1);
+        };
+
+      reader.readAsDataURL(imageInput1.files[0]);
+    }
+  };
+
+  
+};
+
+
+            registrationForm.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+  // Get form values
+            var username = document.getElementById("username").value;
+            localStorage.setItem("username", username);
+            var info = document.getElementById("info").value;
+            localStorage.setItem("info", info);
+            var username = document.getElementById("nickname").value;
+            localStorage.setItem("nickname", username);
+            var text = document.getElementById("text").value;
+            localStorage.setItem("text", text);
+            /*About*/
+            var bio = document.getElementById("bio").value;
+            localStorage.setItem("bio", bio);
+            var age = document.getElementById("age").value;
+            localStorage.setItem("age",age);
+            var gender = document.getElementById("gender").value;
+            localStorage.setItem("gender", gender);
+            var languages = document.getElementById("languages").value;
+            localStorage.setItem("languages",languages);
+            var work = document.getElementById("work").value;
+            localStorage.setItem("work", work);
+            var skill1 = document.getElementById("skill1").value;
+            localStorage.setItem("skill1",skill1);
+            var p1 = document.getElementById("p1").value;
+            localStorage.setItem("p1", p1);
+            var skill2 = document.getElementById("skill2").value;
+            localStorage.setItem("skill1",skill2);
+            var p2 = document.getElementById("p2").value;
+            localStorage.setItem("p2", p2);
+            var skill3 = document.getElementById("skill3").value;
+            localStorage.setItem("skill3",skill3);
+            var p3 = document.getElementById("p3").value;
+            localStorage.setItem("p3", p3);
+            var experience = document.getElementById("experience").value;
+            localStorage.setItem("experience", experience);
+            var projects = document.getElementById("projects").value;
+            localStorage.setItem("projects",projects);
+            var awards = document.getElementById("awards").value;
+            localStorage.setItem("awards", awards);
+            
+            /*Research*/
+            var title1 = document.getElementById("title1").value;
+            localStorage.setItem("title1", title1);
+            var desc1 = document.getElementById("desc1").value;
+            localStorage.setItem("desc1", desc1);
+            var link1 = document.getElementById("link1").value;
+            localStorage.setItem("link1", link1);
+            var title2 = document.getElementById("title2").value;
+            localStorage.setItem("title2", title2);
+            var desc2 = document.getElementById("desc2").value;
+            localStorage.setItem("desc2", desc2);
+            var link2 = document.getElementById("link2").value;
+            localStorage.setItem("link2", link2);
+
+            /*Teaching*/
+            var subject1 = document.getElementById("subject1").value;
+            localStorage.setItem("subject1", subject1);
+            var year1 = document.getElementById("year1").value;
+            localStorage.setItem("year1",year1);
+            var subject2 = document.getElementById("subject2").value;
+            localStorage.setItem("subject2", subject2);
+
+            var year2 = document.getElementById("year2").value;
+            localStorage.setItem("year2",year2);
+            var subject3 = document.getElementById("subject3").value;
+            localStorage.setItem("subject3", subject3);
+            var year3 = document.getElementById("year3").value;
+            localStorage.setItem("year3",year3);
+
+            var allSub = document.getElementById("allSub").value;
+            localStorage.setItem("allSub",allSub);
+            /*Projects*/
+            var project1 = document.getElementById("project1").value;
+            localStorage.setItem("project1", project1);
+            var des1 = document.getElementById("des1").value;
+            localStorage.setItem("des1", des1);
+            var plink1 = document.getElementById("plink1").value;
+            localStorage.setItem("plink1", plink1);
+
+            var project2 = document.getElementById("project2").value;
+            localStorage.setItem("project2", project2);
+            var des2 = document.getElementById("des2").value;
+            localStorage.setItem("des2", des2);
+            var plink2 = document.getElementById("plink2").value;
+            localStorage.setItem("plink2", plink2);
+            /*Publications*/
+            var book1 = document.getElementById("book1").value;
+            localStorage.setItem("book1", book1);
+            var pub1 = document.getElementById("pub1").value;
+            localStorage.setItem("pub1", pub1);
+            var detail1 = document.getElementById("detail1").value;
+            localStorage.setItem("detail1", detail1);
+            
+            var book2 = document.getElementById("book2").value;
+            localStorage.setItem("book2", book2);
+            var pub2 = document.getElementById("pub2").value;
+            localStorage.setItem("pub2", pub2);
+            var detail2 = document.getElementById("detail2").value;
+            localStorage.setItem("detail2", detail2);
+
+            var book3 = document.getElementById("book3").value;
+            localStorage.setItem("book3", book3);
+            var pub3 = document.getElementById("pub3").value;
+            localStorage.setItem("pub3", pub3);
+            var detail3 = document.getElementById("detail3").value;
+            localStorage.setItem("detail3", detail3);
+
+            var allPub = document.getElementById("allPub").value;
+            localStorage.setItem("allPub",allPub);
+            /*Awards and recongnitions*/
+            var award1 = document.getElementById("award1").value;
+            localStorage.setItem("award1", award1);
+            var info1 = document.getElementById("info1").value;
+            localStorage.setItem("info1", info1);
+            var award2 = document.getElementById("award2").value;
+            localStorage.setItem("award2", award2);
+            var info2 = document.getElementById("info2").value;
+            localStorage.setItem("info2", info2);
+            var award3 = document.getElementById("award3").value;
+            localStorage.setItem("award3", award3);
+            var info3 = document.getElementById("info3").value;
+            localStorage.setItem("info3", info3);
+
+            var more = document.getElementById("more").value;
+            localStorage.setItem("more", more);
+            
+            /*contact information*/
+            var contact = document.getElementById("contact").value;
+            localStorage.setItem("contact", contact);
+            
+            window.location.href = "por.html";
+            
+});
+
+        </script>
+    </body>
+</html>
